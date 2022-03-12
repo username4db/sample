@@ -7,21 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8468A99F27DCCCF0006A9064 /* sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A98F27DCCCEE006A9064 /* sampleApp.swift */; };
-		8468A9A027DCCCF0006A9064 /* sampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A98F27DCCCEE006A9064 /* sampleApp.swift */; };
-		8468A9A127DCCCF0006A9064 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A99027DCCCEE006A9064 /* ContentView.swift */; };
-		8468A9A227DCCCF0006A9064 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A99027DCCCEE006A9064 /* ContentView.swift */; };
+		8468A99F27DCCCF0006A9064 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A98F27DCCCEE006A9064 /* SampleApp.swift */; };
+		8468A9A027DCCCF0006A9064 /* SampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A98F27DCCCEE006A9064 /* SampleApp.swift */; };
+		8468A9A127DCCCF0006A9064 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A99027DCCCEE006A9064 /* SampleView.swift */; };
+		8468A9A227DCCCF0006A9064 /* SampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A99027DCCCEE006A9064 /* SampleView.swift */; };
 		8468A9A327DCCCF0006A9064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8468A99127DCCCF0006A9064 /* Assets.xcassets */; };
 		8468A9A427DCCCF0006A9064 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8468A99127DCCCF0006A9064 /* Assets.xcassets */; };
+		8468A9B027DCD198006A9064 /* TextSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A9AF27DCD198006A9064 /* TextSample.swift */; };
+		8468A9B127DCD198006A9064 /* TextSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A9AF27DCD198006A9064 /* TextSample.swift */; };
+		8468A9B327DCD678006A9064 /* ImageSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A9B227DCD678006A9064 /* ImageSample.swift */; };
+		8468A9B427DCD678006A9064 /* ImageSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8468A9B227DCD678006A9064 /* ImageSample.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8468A98F27DCCCEE006A9064 /* sampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sampleApp.swift; sourceTree = "<group>"; };
-		8468A99027DCCCEE006A9064 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		8468A98F27DCCCEE006A9064 /* SampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleApp.swift; sourceTree = "<group>"; };
+		8468A99027DCCCEE006A9064 /* SampleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleView.swift; sourceTree = "<group>"; };
 		8468A99127DCCCF0006A9064 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8468A99627DCCCF0006A9064 /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8468A99627DCCCF0006A9064 /* SwiftUI Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8468A99C27DCCCF0006A9064 /* sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8468A99E27DCCCF0006A9064 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8468A9AF27DCD198006A9064 /* TextSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSample.swift; sourceTree = "<group>"; };
+		8468A9B227DCD678006A9064 /* ImageSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSample.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +60,10 @@
 		8468A98E27DCCCEE006A9064 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				8468A98F27DCCCEE006A9064 /* sampleApp.swift */,
-				8468A99027DCCCEE006A9064 /* ContentView.swift */,
+				8468A9AE27DCCDFD006A9064 /* View */,
+				8468A9AD27DCCDF6006A9064 /* Model */,
+				8468A98F27DCCCEE006A9064 /* SampleApp.swift */,
+				8468A99027DCCCEE006A9064 /* SampleView.swift */,
 				8468A99127DCCCF0006A9064 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -64,7 +72,7 @@
 		8468A99727DCCCF0006A9064 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8468A99627DCCCF0006A9064 /* sample.app */,
+				8468A99627DCCCF0006A9064 /* SwiftUI Sample.app */,
 				8468A99C27DCCCF0006A9064 /* sample.app */,
 			);
 			name = Products;
@@ -76,6 +84,22 @@
 				8468A99E27DCCCF0006A9064 /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		8468A9AD27DCCDF6006A9064 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		8468A9AE27DCCDFD006A9064 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8468A9AF27DCD198006A9064 /* TextSample.swift */,
+				8468A9B227DCD678006A9064 /* ImageSample.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,7 +119,7 @@
 			);
 			name = "sample (iOS)";
 			productName = "sample (iOS)";
-			productReference = 8468A99627DCCCF0006A9064 /* sample.app */;
+			productReference = 8468A99627DCCCF0006A9064 /* SwiftUI Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
 		8468A99B27DCCCF0006A9064 /* sample (macOS) */ = {
@@ -140,6 +164,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 8468A98927DCCCEE006A9064;
 			productRefGroup = 8468A99727DCCCF0006A9064 /* Products */;
@@ -176,8 +201,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8468A9A127DCCCF0006A9064 /* ContentView.swift in Sources */,
-				8468A99F27DCCCF0006A9064 /* sampleApp.swift in Sources */,
+				8468A9A127DCCCF0006A9064 /* SampleView.swift in Sources */,
+				8468A9B327DCD678006A9064 /* ImageSample.swift in Sources */,
+				8468A9B027DCD198006A9064 /* TextSample.swift in Sources */,
+				8468A99F27DCCCF0006A9064 /* SampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,8 +212,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8468A9A227DCCCF0006A9064 /* ContentView.swift in Sources */,
-				8468A9A027DCCCF0006A9064 /* sampleApp.swift in Sources */,
+				8468A9A227DCCCF0006A9064 /* SampleView.swift in Sources */,
+				8468A9B427DCD678006A9064 /* ImageSample.swift in Sources */,
+				8468A9B127DCD198006A9064 /* TextSample.swift in Sources */,
+				8468A9A027DCCCF0006A9064 /* SampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +346,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -325,8 +355,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.demo.sample;
-				PRODUCT_NAME = sample;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.idv.swiftui.sample;
+				PRODUCT_NAME = "SwiftUI Sample";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -347,6 +377,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
@@ -355,8 +386,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = tw.com.demo.sample;
-				PRODUCT_NAME = sample;
+				PRODUCT_BUNDLE_IDENTIFIER = tw.idv.swiftui.sample;
+				PRODUCT_NAME = "SwiftUI Sample";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
